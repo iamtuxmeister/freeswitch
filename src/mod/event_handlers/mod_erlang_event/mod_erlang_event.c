@@ -970,7 +970,7 @@ static void listener_main_loop(listener_t *listener)
 	int status = 1;
 	int msgs_sent = 0; /* how many messages we sent in a loop */
 
-	while ((status >= 0 || erl_errno == ETIMEDOUT || erl_errno == EAGAIN) && !prefs.done) {
+	while ((status >= 0 || erl_errno == ETIMEDOUT || erl_errno == EAGAIN || erl_errno == 0) && !prefs.done) {
 		erlang_msg msg;
 		ei_x_buff buf;
 		ei_x_buff rbuf;
