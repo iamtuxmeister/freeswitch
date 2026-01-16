@@ -85,7 +85,7 @@ void ei_link(listener_t *listener, erlang_pid * from, erlang_pid * to)
 	//status = switch_socket_send(sock, msgbuf, (switch_size_t *) &index);
 	//if (status != SWITCH_STATUS_SUCCESS) {
 	//	switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_WARNING, "Failed to link to process on %s\n", listener->peer_nodename);
-	}
+	//}
 	//switch_mutex_unlock(listener->sock_mutex);
 	switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_WARNING, "Skipped testing connection OTP/26+\n");
 }
